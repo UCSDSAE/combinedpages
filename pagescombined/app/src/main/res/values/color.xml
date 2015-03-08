@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="list_item_title">#fff</color>
+    <color name="list_background">#303030</color>
+    <color name="list_background_pressed">#992416</color>
+    <color name="list_divider">#272727</color>
+    <color name="counter_text_bg">#626262</color>
+    <color name="counter_text_color">#c5c4c4</color>
+    <color name="grey_light">#FFCCCCCC</color>
+    <color name="dark">#4b4b4b</color>
+
+    <color name="facebook">#3b5998</color>
+    <color name="twitter">#55ACEE</color>
+    <color name="linkedin">#287bbc</color>
+    <color name="googleplus">#D34836</color>
+
+</resources>

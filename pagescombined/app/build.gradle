@@ -1,0 +1,47 @@
+apply plugin: 'com.android.application'
+
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:1.0.0'
+    }
+}
+apply plugin: 'android'
+
+repositories {
+    mavenCentral()
+}
+android {
+    compileSdkVersion 21
+    buildToolsVersion "21.1.2"
+
+    defaultConfig {
+        applicationId "com.example.tylerpollak.sae_ucsd"
+        minSdkVersion 14
+        targetSdkVersion 21
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+}
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile 'com.android.support:appcompat-v7:21.0.3'
+    compile 'com.google.android.gms:play-services:6.1.71'
+    compile 'com.github.asne:asne-facebook:0.3.1'
+    compile 'com.github.asne:asne-linkedin:0.3.1'
+    compile 'com.github.asne:asne-googleplus:0.3.1'
+    compile files('../EstimoteSDK/estimote-sdk-preview.jar')
+
+}
+task wrapper(type: Wrapper) {
+    gradleVersion = '1.10'
+}
